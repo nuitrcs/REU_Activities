@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --account=w10001  ## YOUR ACCOUNT pXXXX or bXXXX
-#SBATCH --partition=w10001  ### PARTITION (buyin, short, normal, etc)
+#SBATCH --account=e32430  ## YOUR ACCOUNT pXXXX or bXXXX
+#SBATCH --partition=e32430  ### PARTITION (buyin, short, normal, etc)
 #SBATCH --nodes=1 ## how many computers do you need
 #SBATCH --ntasks-per-node=1 ## how many cpus or processors do you need on each computer
 #SBATCH --time=00:10:00 ## how long does this need to run (remember different partitions have restrictions on this param)
