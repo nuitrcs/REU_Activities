@@ -26,6 +26,7 @@ weeks = [1, 2, 3, 4, 5, 6, 7, 8]
 heights = [10, 15, 20, 25, 30, 35, 40, 50]
 
 **#Plotting the data**
+
 plt.plot(weeks, heights, marker='o', color='blue')
 
 plt.xlabel('Weeks')
