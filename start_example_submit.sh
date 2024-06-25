@@ -1,5 +1,5 @@
 #!/
-#SBATCH 
+#SBATCH --account=
 # finish the rest
 
 module ... #get rid of any modules in case you previosuly loaded some
