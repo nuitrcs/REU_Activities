@@ -4,6 +4,7 @@
 
 module ... #get rid of any modules in case you previosuly loaded some
 
+#load the modules
 module load python-anaconda3
 eval "$(conda shell.bash hook)"
 source activate slurm-py37-test
