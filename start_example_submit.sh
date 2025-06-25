@@ -1,6 +1,12 @@
-#!/
-#SBATCH --account=
-# finish the rest
+#!/bin/bash
+#SBATCH --account=<allocation>
+#SBATCH --partition=<partition>
+#SBATCH --nodes=<number_of_nodes>
+#SBATCH --ntasks-per-node=<number_of_cpus>
+#SBATCH --time=<time>
+#SBATCH --mem=<memory>
+#SBATCH --job-name=<your_job_name>
+#SBATCH --output=<your_out_log>
 
 module ... #get rid of any modules in case you previosuly loaded some
 
