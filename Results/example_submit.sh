@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --account=e32430  ## YOUR ACCOUNT pXXXX or bXXXX
-#SBATCH --partition=e32430  ### PARTITION (buyin, short, normal, etc)
+#SBATCH --account=e32894  ## YOUR ACCOUNT pXXXX or bXXXX
+#SBATCH --partition=e32894  ### PARTITION (buyin, short, normal, etc)
 #SBATCH --nodes=1 ## how many computers do you need
 #SBATCH --ntasks-per-node=1 ## how many cpus or processors do you need on each computer
 #SBATCH --time=00:10:00 ## how long does this need to run (remember different partitions have restrictions on this param)
@@ -11,9 +11,7 @@
 #SBATCH --mail-user=email@u.northwestern.edu ## your email
 
 module purge all
-module load python-anaconda3
-eval "$(conda shell.bash hook)"
-source activate slurm-py37-test
+module load python/3.12.10
 
 python --version
 python slurm_test.py
